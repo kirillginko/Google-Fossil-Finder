@@ -1,0 +1,12 @@
+.locate > button {
+  position: absolute;
+  top: 0rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  z-index: 10;
+}
+.locate img {
+  width: 50px;
+  cursor: pointer;
+}
