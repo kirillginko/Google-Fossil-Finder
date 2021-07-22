@@ -72,9 +72,9 @@ function App() {
   return (
     <div className="app">
       <h1>
-        Camping Spotter{" "}
-        <span role="img" aria-label="tent">
-          ⛺️
+        Fossil Finder
+        <span role="img" aria-label="dinosaur">
+          🦕
         </span>
       </h1>
       <Locate panTo={panTo} />
@@ -92,7 +92,7 @@ function App() {
             key={marker.time.toISOString()}
             position={{ lat: marker.lat, lng: marker.lng }}
             icon={{
-              url: "/Marker.png",
+              url: "/dino.png",
               scaledSize: new window.google.maps.Size(30, 30),
               origin: new window.google.maps.Point(0, 0),
               anchor: new window.google.maps.Point(15, 15),
@@ -110,7 +110,7 @@ function App() {
             }}
           >
             <div>
-              <h2>Campsite Found!</h2>
+              <h2>Fossil Found!</h2>
               <p>Found {formatRelative(selected.time, new Date())}</p>
             </div>
           </InfoWindow>
